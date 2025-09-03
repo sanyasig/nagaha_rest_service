@@ -1,6 +1,6 @@
 import requests
 
-import nagaha_config
+from app import nagaha_config
 
 def send_ntfy_message(msg, title='NAGAHA SERVICES'):
    topic = nagaha_config.get_config('NTFY','topic_name')

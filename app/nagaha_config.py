@@ -2,7 +2,7 @@ import configparser
 
 # Load config
 config = configparser.ConfigParser()
-config.read("config.ini")
+config.read("app/config.ini")
 
 def get_config(section, key):
     config_value = config[section][key]

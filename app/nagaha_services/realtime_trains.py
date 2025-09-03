@@ -1,7 +1,7 @@
 import requests
 from requests.auth import HTTPBasicAuth
 
-import nagaha_config
+from app import nagaha_config
 
 def get_next_train_status(src, dest):
     
