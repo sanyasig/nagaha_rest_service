@@ -10,7 +10,7 @@ router = APIRouter()
 async def read_user(service_name: str):
     response = ""
 
-    if service_name == '':
+    if service_name == 'telugu_movies':
         titles = get_telugu_titles()
         response = "\n  - ".join(titles)
         send_ntfy_message(response, title='New Movies on Movie Rulz')
