@@ -13,7 +13,7 @@ def get_config_section(section):
 
 
 secrect_config = configparser.ConfigParser()
-secrect_config.read("secrets.ini")
+secrect_config.read("app/secrets.ini")
 
 def get_sercret(section, key):
     config_value = secrect_config[section][key]
